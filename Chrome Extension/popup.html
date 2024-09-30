@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                font-family: Arial, sans-serif;
+                width: 300px;
+                padding: 10px;
+            }
+            .box{
+                display: flex;
+                width:300px;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            #slider{
+
+            }
+            button{
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="box">
+            <h2 style="text-align:center">
+                Drag left to decrease summary size, right to increase
+            </h2>
+            <input id="slider" type="range" min="5" max="50" value="10"> <br />
+            <button id="summaryButton">Get Summary</button>
+            <script src="popup.js">
+            </script>
+            <h4 id="messages"></h4>
+        </div>
+    </body>
+</html>

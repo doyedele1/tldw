@@ -1,0 +1,20 @@
+{
+    "name": "TLDW",
+    "version": "1.0",
+    "description": "Automatically generate summaries of Youtube videos",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs", "activeTab", "storage", "scripting"
+    ],
+    "content_scripts":[{
+		"matches":["*://*.youtube.com/*"],
+		"css":["style.css"],
+		"js": ["background.js"]
+	}],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ],
+    "manifest_version": 3
+}
